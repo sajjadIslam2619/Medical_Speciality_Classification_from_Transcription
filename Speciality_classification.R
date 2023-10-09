@@ -26,8 +26,8 @@ library(textreuse)
 library(text2vec)
 library(caret)
 
-# Data file local directory. Data can be found in: https://www.kaggle.com/datasets/tboyle10/medicaltranscriptions
-data<-read.csv(file = '/Users/sajjadislam/Documents/Academic Projects/Data analytics/Project 1/mtsamples.csv', header=TRUE, stringsAsFactors=FALSE)
+# Data can be found in: https://www.kaggle.com/datasets/tboyle10/medicaltranscriptions
+data<-read.csv(file = 'mtsamples.csv', header=TRUE, stringsAsFactors=FALSE)
 
 df <- data[c("transcription", "medical_specialty")]
 #length(df$medical_specialty)
